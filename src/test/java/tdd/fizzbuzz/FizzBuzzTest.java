@@ -69,6 +69,18 @@ public class FizzBuzzTest {
         //then
         assertEquals("FizzWhizz",result);
     }
+
+    @Test
+    void should_return_BuzzWhizz_when_count_off_number_with_multiple_of_5_7(){
+        //given
+        int order = 35;
+        //when
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        String result = fizzbuzz.countOff(order);
+        //then
+        assertEquals("BuzzWhizz",result);
+    }
+
     @Test
     void should_return_FizzBuzzWhizz_when_count_off_number_with_multiple_of_3_5_7(){
         //given
