@@ -59,4 +59,15 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz",result);
     }
 
+    @Test
+    void should_return_FizzBuzz_when_count_off_number_with_multiple_of_3_7(){
+        //given
+        int order = 21;
+        //when
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        String result = fizzbuzz.countOff(order);
+        //then
+        assertEquals("FizzWhizz",result);
+    }
+
 }
